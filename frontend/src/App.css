@@ -1,0 +1,16 @@
+:root { color-scheme: light dark; }
+body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial; margin: 0; }
+.container { max-width: 800px; margin: 2rem auto; padding: 1rem; }
+h1 { margin-bottom: 1rem; }
+.form { display: grid; gap: .5rem; margin-bottom: 1rem; }
+.form input, .form textarea { padding: .6rem; border: 1px solid #8883; border-radius: 8px; }
+.actions { display: flex; gap: .5rem; }
+button { padding: .5rem .9rem; border-radius: 8px; border: 1px solid #8883; cursor: pointer; background: white; }
+.list { list-style: none; padding: 0; display: grid; gap: .75rem; }
+.card { border: 1px solid #8883; border-radius: 12px; padding: .75rem; background: #fff; }
+.card-head { display: flex; justify-content: space-between; align-items: center; }
+.error { color: #c00; }
+@media (prefers-color-scheme: dark) {
+  body { background: #0b0b0b; color: #e6e6e6; }
+  .card { background: #111; border-color: #333; }
+}
